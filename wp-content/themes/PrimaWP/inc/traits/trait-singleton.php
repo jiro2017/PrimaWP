@@ -1,5 +1,5 @@
 <?php
-namespace PrimaWP\Inc\Triats;
+namespace PrimaWP_THEME\Inc\Traits;
 
 trait Singleton {
 
@@ -19,7 +19,7 @@ trait Singleton {
         if(!isset( $instance[ $called_class])) {
             $instance[ $called_class ] = new $called_class;
 
-            do_acgion( sprintf( 'aquila-gtheme_singleton_init%s', $called_class));
+            do_action( sprintf( 'primawp_theme_singleton_init%s', $called_class));
         }
 
         return $instance[ $called_class ];

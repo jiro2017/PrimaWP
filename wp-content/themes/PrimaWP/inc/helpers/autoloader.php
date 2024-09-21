@@ -2,10 +2,10 @@
 /**
  * Autoloader file for theme.
  *
- * @package Aquila
+ * @package PrimaWP
  */
 
-namespace AQUILA_THEME\Inc\Helpers;
+namespace PrimaWP_THEME\Inc\Helpers;
 
 /**
  * Auto loader function.
@@ -16,7 +16,7 @@ namespace AQUILA_THEME\Inc\Helpers;
  */
 function autoloader( $resource = '' ) {
 	$resource_path  = false;
-	$namespace_root = 'AQUILA_THEME\\';
+	$namespace_root = 'PrimaWP_THEME\\';
 	$resource       = trim( $resource, '\\' );
 
 	if ( empty( $resource ) || strpos( $resource, '\\' ) === false || strpos( $resource, $namespace_root ) !== 0 ) {
@@ -69,7 +69,6 @@ function autoloader( $resource = '' ) {
 		}
 
 		$resource_path = sprintf( '%s/inc/%s/%s.php', untrailingslashit( PrimaWP_DIR_PATH ), $directory, $file_name );
-
 	}
 
 	/**
@@ -84,4 +83,4 @@ function autoloader( $resource = '' ) {
 
 }
 
-spl_autoload_register( '\AQUILA_THEME\Inc\Helpers\autoloader' );
+spl_autoload_register( '\PrimaWP_THEME\Inc\Helpers\autoloader' );
