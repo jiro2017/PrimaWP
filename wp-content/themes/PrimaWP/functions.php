@@ -7,11 +7,7 @@
 if( !defined( 'PrimaWP_DIR_PATH' ) ) {
     define("PrimaWP_DIR_PATH", untrailingslashit( get_template_directory() ) );
 }
-require_once PrimaWP_DIR_PATH."/inc/helpers/autoload.php";
-
-echo "<pre>";
-echo PrimaWP_DIR_PATH;
-echo "</pre>";
+require_once PrimaWP_DIR_PATH."/inc/helpers/autoloader.php";
 add_theme_support('title-tag');
 
 function PrimaWP_register_scripts() {
