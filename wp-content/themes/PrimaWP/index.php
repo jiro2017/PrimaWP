@@ -6,9 +6,9 @@
  */
 get_header();
 ?>
-
-<body>
-  <?php wp_body_open(); ?>
+    <div class="content">
+        content
+    </div>
 <?php
 get_footer();
 ?>
