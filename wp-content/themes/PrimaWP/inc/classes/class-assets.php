@@ -22,7 +22,7 @@ class Assets {
     }
     
     public function register_styles() {
-        echo PrimaWP_DIR_URI .'/style.css';
+        // echo PrimaWP_DIR_URI .'/style.css';
         wp_register_style(
             'stylesheet', 
             PrimaWP_DIR_URI .'/style.css',
@@ -34,7 +34,7 @@ class Assets {
     }
 
     public function register_scripts() {
-        echo PrimaWP_DIR_URI.'/inc/assets/main.js';
+        // echo PrimaWP_DIR_URI.'/inc/assets/main.js';
         wp_register_script(
             'main-javascript',
             PrimaWP_DIR_URI.'/inc/assets/main.js',
@@ -43,5 +43,14 @@ class Assets {
             false
         );
         wp_enqueue_script('main-javascript');
+        
+        wp_register_script(
+            'footer-javascript',
+            PrimaWP_DIR_URI.'/inc/assets/footerscript.js',
+            [],
+            filemtime( PrimaWP_DIR_PATH . '/inc/assets/footerscript.js'),
+            true
+        );
+        wp_enqueue_script('footer-javascript');
     }
 }
