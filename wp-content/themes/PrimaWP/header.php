@@ -25,7 +25,15 @@
             } else {
                 echo "Site Logo";
             }
+
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'primawp-header-menu',
+                    'container_class' => 'my_extra_menu_class'
+                )
+            );
         ?>
+
         Header
     </header>
 
