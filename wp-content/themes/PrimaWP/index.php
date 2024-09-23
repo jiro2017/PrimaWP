@@ -7,12 +7,10 @@
 get_header();
 ?>
     <div class="content">
-        content
+        <?php esc_html_e('Content Blog', 'PrimaWP'); ?>
     </div>
 <?php
 get_footer();
 ?>
 </body>
 </html>
-
-
