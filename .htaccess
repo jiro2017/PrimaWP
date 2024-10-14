@@ -13,6 +13,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /wordpress_page/index.php [L]
 </IfModule>
 
+
 # END WordPress
 
-# BEGIN WordPress

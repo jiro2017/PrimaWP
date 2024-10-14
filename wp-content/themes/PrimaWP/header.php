@@ -36,7 +36,7 @@ $header_menus = wp_get_nav_menu_items ( $menu_id );
             if( function_exists('the_custom_logo')) {
                 the_custom_logo();
             } else {
-                echo "Site Logo";
+                echo "Site Logo Not Available";
             }
 
             // wp_nav_menu(
