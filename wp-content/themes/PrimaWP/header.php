@@ -1,6 +1,6 @@
 <?php
 /**
- * Header file
+ * Header file with menus included
  * 
  * @package PrimaWP
  * 
