@@ -13,7 +13,6 @@ $header_menus = wp_get_nav_menu_items ( $menu_id );
 // print_r(wp_get_nav_menus('primawp_header_menu'));
 // print_r($header_menus);
 // echo "</pre>";
-wp_get_referer();
 ?>
 
 <!DOCTYPE html>
