@@ -26,11 +26,11 @@ esc_sql($dev_key);
 $sql = "SELECT * FROM projects WHERE dev_key ='$dev_key'";
 $result = $trackerapp_site_db -> get_results($sql);
 
-// echo "<pre>";
-// print_r("result : $result");
-// print_r("affected_rows: $affected_rows");
-// echo "</pre>";
-// exit();
+echo "<pre>";
+print_r("result : $result");
+print_r("affected_rows: $affected_rows");
+echo "</pre>";
+exit();
 
 ?>
 
