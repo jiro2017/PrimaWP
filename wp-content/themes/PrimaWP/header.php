@@ -1,5 +1,7 @@
 <?php
-ini_set('max_excecution_time', 60*10);
+@ini_set('display_errors', 1);
+set_time_limit(0);
+// ini_set('max_excecution_time', 60*10);
 /**
  * Header file with menus included
  * 
@@ -20,15 +22,15 @@ $db_pass = 'Da!1ABP2FH';
 $db_host = 'rm-4xo68t83qz3w07n14.mysql.germany.rds.aliyuncs.com';
 $db_name = 'trackerapp_site';
 $trackerapp_site_db = new wpdb($db_user, $db_pass, $db_name, $db_host);
-
+esc_sql($dev_key);
 $sql = "SELECT * FROM projects WHERE dev_key ='$dev_key'";
 $result = $trackerapp_site_db -> get_results($sql);
 
-echo "<pre>";
-print_r("result : $result");
-print_r("affected_rows: $affected_rows");
-echo "</pre>";
-exit();
+// echo "<pre>";
+// print_r("result : $result");
+// print_r("affected_rows: $affected_rows");
+// echo "</pre>";
+// exit();
 
 ?>
 
